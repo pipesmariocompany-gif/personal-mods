@@ -13,5 +13,5 @@ omds created by claude for me and just for me if u wanna try feel free i dont gi
 
 | MC   | Mod                            | Version | Status                 |
 |------|--------------------------------|---------|------------------------|
-| 26.2 | [holofote](26.2/holofote/)     | 0.4.1   | not tested in-game yet |
+| 26.2 | [holofote](26.2/holofote/)     | 0.5.0   | not tested in-game yet |
 | 26.2 | [construcao](26.2/construcao/) | 0.1.0   | works in-game          |
