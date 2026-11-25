@@ -16,4 +16,4 @@ Pixelated volumetric spotlights (PSX look) you can animate in Flashback replays.
 - **Cutout:** players, villagers, mobs and livrosjogos books inside/behind the beam stay clean (no PSX dither on them). `recorte=0` turns it off.
 - **GPUs:** checked offline on both AMD GPUs of a Ryzen 5 3500U laptop (Vega 8 and Radeon 540X, driver 26.5.2): same image, no GL errors, ~5 ms per light pass on the 540X.
 
-Status: 0.6.0 adds the cinematic shader light and its keyframe controls; shaders verified offline on the Radeon 540X (images + timings). 0.5.0 added the shader holofote switch, 0.4.1 the AMD crash fix, 0.4.0 the cutout. None of these has run in-game yet.
+Status: works in-game. 0.6.0 tested with Iris + BSL in the Flashback editor: the shader holofote switches on, the cinematic light renders, no errors or crashes. 0.6.0 adds the cinematic shader light and its keyframe controls; 0.5.0 added the shader holofote switch, 0.4.1 the AMD crash fix, 0.4.0 the cutout.
