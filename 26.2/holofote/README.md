@@ -1,4 +1,4 @@
-# Holofote 0.5.0
+# Holofote 0.6.0
 
 Pixelated volumetric spotlights (PSX look) you can animate in Flashback replays.
 
@@ -8,9 +8,12 @@ Pixelated volumetric spotlights (PSX look) you can animate in Flashback replays.
 - **Config:** `config/holofote.properties` (pixel size, samples, block shadows, cutout on/off). Reloads on F8.
 - **Two holofotes in one mod:** without a shaderpack the vanilla holofote draws inside the world (after solid blocks). With an Iris shaderpack on (BSL etc.) the vanilla one turns off and the shader holofote draws on top of the shaderpack's final image, using its depth. Switches by itself within ~1 s when you toggle shaders.
 - **Shader options:** `shader=0` turns the light off while a shaderpack is on; `forcaShader` scales brightness only in shader mode (default 1.0).
+- **Cinematic shader light (0.6.0):** in shader mode the beam is a smooth volumetric light: forward scattering (brighter looking into the light), drifting dust, block shadows from a per-light shadow map, edge-aware smoothing and upscale, soft lamp halo.
+- **Right-click a keyframe** to adjust it. *Look* (saved per keyframe): volume/density, dispersion, dust, lamp halo. *Quality* (all holofotes, saved to `holofote.properties` on this PC): preset Rapido / Equilibrado / Bonito / Maximo, light resolution, samples, shadow cycles, shadow sharpness, smoothing cycles, plus a live GPU cost readout.
+- **Cost (Radeon 540X, 1080p, beam filling the screen):** Rapido ~3 ms, Equilibrado ~7 ms, Bonito ~15 ms, Maximo ~55-65 ms (for export). The small editor preview costs much less.
 - **Debug log:** `diag=1` in the config writes GPU readback diagnostics to the log on each F8 / first track light. Off by default.
 - **Shadows:** blocks block the beam (no light through roofs).
 - **Cutout:** players, villagers, mobs and livrosjogos books inside/behind the beam stay clean (no PSX dither on them). `recorte=0` turns it off.
 - **GPUs:** checked offline on both AMD GPUs of a Ryzen 5 3500U laptop (Vega 8 and Radeon 540X, driver 26.5.2): same image, no GL errors, ~5 ms per light pass on the 540X.
 
-Status: 0.5.0 adds the shader holofote and reads the depth mode from the real GL clip-control state. The beam shaders were verified offline in all three depth conventions (vanilla reverse-Z, Iris 0..1, Iris -1..1). Not tested in-game yet; this also covers the 0.4.1 AMD crash fix and the 0.4.0 cutout, which have not run in-game either.
+Status: 0.6.0 adds the cinematic shader light and its keyframe controls; shaders verified offline on the Radeon 540X (images + timings). 0.5.0 added the shader holofote switch, 0.4.1 the AMD crash fix, 0.4.0 the cutout. None of these has run in-game yet.
