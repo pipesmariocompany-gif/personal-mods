@@ -13,4 +13,4 @@ A redstone block that spits game cases downward with rigid body physics (Bullet)
 - **Flashback:** this mod adds an entity type, so replays recorded without it may crash while it is installed. Remove the jar to open them.
 - **Bundled:** [Libbulletjme](https://github.com/stephengold/Libbulletjme) 23.2.0 (BSD-3-Clause / zlib / MIT); notices in `LICENSE-libbulletjme.txt` inside the jar.
 
-Status: experimental, not tested in-game yet.
+Status: works in-game, including Flashback (experimental).
