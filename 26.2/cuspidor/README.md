@@ -1,4 +1,18 @@
-# Cuspidor 1.0.0 (experimental)
+# Cuspidor
+
+All versions are kept in this folder. **Put only one of these jars in `mods` at a time.**
+
+| Jar   | Changes                                                                                      | Status                  |
+|-------|----------------------------------------------------------------------------------------------|-------------------------|
+| 1.0.0 | first version                                                                                | works in-game           |
+| 1.1.0 | area spitter block (sizes 3-6), random or organized mode; spitters ignore 1 solid block below | not tested in-game      |
+| 1.2.0 | container block that traps cases, invisible in Flashback replays                             | not tested in-game      |
+| 1.3.0 | cases lock in place after settling on support, lighter physics                               | tried in-game, heavy while many cases are loose |
+| 1.3.1 | up to 300 per second, area outlets fire 3 stacked cases                                      | not tested in-game      |
+
+The notes below describe 1.0.0; later versions change what the table lists.
+
+## 1.0.0 (experimental)
 
 A redstone block that spits game cases downward with rigid body physics (Bullet).
 
@@ -13,4 +27,4 @@ A redstone block that spits game cases downward with rigid body physics (Bullet)
 - **Flashback:** this mod adds an entity type, so replays recorded without it may crash while it is installed. Remove the jar to open them.
 - **Bundled:** [Libbulletjme](https://github.com/stephengold/Libbulletjme) 23.2.0 (BSD-3-Clause / zlib / MIT); notices in `LICENSE-libbulletjme.txt` inside the jar.
 
-Status: works in-game, including Flashback (experimental).
+1.0.0 status: works in-game, including Flashback (experimental).
